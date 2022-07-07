@@ -1,0 +1,42 @@
+[2022-07-07 18:11:44,367: INFO: data_ingestion]: 
+********************
+[2022-07-07 18:11:44,367: INFO: data_ingestion]: >>>>> stage Data Ingestion stage started <<<<<
+[2022-07-07 18:11:44,370: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-07-07 18:12:28,374: ERROR: data_ingestion]: [WinError 5] Access is denied: 'artifacts\\cache_dir\\xtreme\\PAN-X.en\\1.0.0\\349258adc25bb45e47de193222f95e68a44f7a7ab53c4283b3f007208a11bf7e.incomplete' -> 'artifacts\\cache_dir\\xtreme\\PAN-X.en\\1.0.0\\349258adc25bb45e47de193222f95e68a44f7a7ab53c4283b3f007208a11bf7e'
+Traceback (most recent call last):
+  File "D:\Projects\BERT\NER Project\NER-Project\src\NER_data_ingestion\data_ingestion.py", line 46, in <module>
+    main(config_path=parsed_args.config)
+  File "D:\Projects\BERT\NER Project\NER-Project\src\NER_data_ingestion\data_ingestion.py", line 35, in main
+    data_ingestion.get_data()
+  File "D:\Projects\BERT\NER Project\NER-Project\src\NER_data_ingestion\data_ingestion.py", line 27, in get_data
+    en_data = load_dataset(self.dataset_name, self.subset, cache_dir=self.cache_dir )
+  File "C:\Users\zakia\AppData\Local\Programs\Python\Python310\lib\site-packages\datasets\load.py", line 1679, in load_dataset
+    builder_instance.download_and_prepare(
+  File "C:\Users\zakia\AppData\Local\Programs\Python\Python310\lib\site-packages\datasets\builder.py", line 689, in download_and_prepare
+    with incomplete_dir(self._cache_dir) as tmp_data_dir:
+  File "C:\Users\zakia\AppData\Local\Programs\Python\Python310\lib\contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "C:\Users\zakia\AppData\Local\Programs\Python\Python310\lib\site-packages\datasets\builder.py", line 666, in incomplete_dir
+    os.rename(tmp_dir, dirname)
+PermissionError: [WinError 5] Access is denied: 'artifacts\\cache_dir\\xtreme\\PAN-X.en\\1.0.0\\349258adc25bb45e47de193222f95e68a44f7a7ab53c4283b3f007208a11bf7e.incomplete' -> 'artifacts\\cache_dir\\xtreme\\PAN-X.en\\1.0.0\\349258adc25bb45e47de193222f95e68a44f7a7ab53c4283b3f007208a11bf7e'
+[2022-07-07 18:15:58,553: INFO: data_ingestion]: 
+********************
+[2022-07-07 18:15:58,553: INFO: data_ingestion]: >>>>> stage Data Ingestion stage started <<<<<
+[2022-07-07 18:15:58,554: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-07-07 18:16:56,143: ERROR: data_ingestion]: [WinError 5] Access is denied: 'artifacts\\cache_dir\\xtreme\\PAN-X.en\\1.0.0\\349258adc25bb45e47de193222f95e68a44f7a7ab53c4283b3f007208a11bf7e.incomplete' -> 'artifacts\\cache_dir\\xtreme\\PAN-X.en\\1.0.0\\349258adc25bb45e47de193222f95e68a44f7a7ab53c4283b3f007208a11bf7e'
+Traceback (most recent call last):
+  File "D:\Projects\BERT\NER Project\NER-Project\src\NER_data_ingestion\data_ingestion.py", line 46, in <module>
+    main(config_path=parsed_args.config)
+  File "D:\Projects\BERT\NER Project\NER-Project\src\NER_data_ingestion\data_ingestion.py", line 35, in main
+    data_ingestion.get_data()
+  File "D:\Projects\BERT\NER Project\NER-Project\src\NER_data_ingestion\data_ingestion.py", line 27, in get_data
+    en_data = load_dataset(self.dataset_name, self.subset, cache_dir=self.cache_dir )
+  File "C:\Users\zakia\AppData\Local\Programs\Python\Python310\lib\site-packages\datasets\load.py", line 1679, in load_dataset
+    builder_instance.download_and_prepare(
+  File "C:\Users\zakia\AppData\Local\Programs\Python\Python310\lib\site-packages\datasets\builder.py", line 689, in download_and_prepare
+    with incomplete_dir(self._cache_dir) as tmp_data_dir:
+  File "C:\Users\zakia\AppData\Local\Programs\Python\Python310\lib\contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "C:\Users\zakia\AppData\Local\Programs\Python\Python310\lib\site-packages\datasets\builder.py", line 666, in incomplete_dir
+    os.rename(tmp_dir, dirname)
+PermissionError: [WinError 5] Access is denied: 'artifacts\\cache_dir\\xtreme\\PAN-X.en\\1.0.0\\349258adc25bb45e47de193222f95e68a44f7a7ab53c4283b3f007208a11bf7e.incomplete' -> 'artifacts\\cache_dir\\xtreme\\PAN-X.en\\1.0.0\\349258adc25bb45e47de193222f95e68a44f7a7ab53c4283b3f007208a11bf7e'
